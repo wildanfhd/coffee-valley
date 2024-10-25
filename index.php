@@ -29,20 +29,6 @@ if (isset($_POST['login'])) {
     if (empty($err)) {
       $_SESSION['username'] = $username;
       $_SESSION['password'] = md5($password);
-
-      // // Mengecek apakah session
-      // if ($sessionCheck == 1) {
-      //   $cookie_name = "cookie_username";
-      //   $cookie_value = "cookie_value";
-      //   $cookie_time = time() + (60 * 60 * 24); // Menyimpan cookie selama 1 hari
-      //   setcookie($cookie_name, $cookie_value, $cookie_time, "/");
-
-      //   $cookie_name = "cookie_password";
-      //   $cookie_value = md5($password);
-      //   $cookie_time = time() + (60 * 60 * 24);
-      //   setcookie($cookie_name, $cookie_value, $cookie_time, "/");
-      //   header("location:src/dashboard.php");
-      // }
     }
   }
 }
@@ -54,16 +40,12 @@ if (isset($_POST['login'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="../public/style.css">
   <title>Coffee Valley</title>
 </head>
 
 <body>
-  <img src="" alt="">
-  <h1>Coffee Valley</h1>
-  <p>Taste the love in every cup!</p>
-  <p>One Alewife Center 3rd Floor</p>
-  <p>Cambridge, MA 02140</p>
+  <?php include_once('./template/header.php'); ?>
 
 
   <form action="src/home.php" class="form" method="post" role="form">

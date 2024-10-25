@@ -6,11 +6,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/style.css">
   <title>Add Distributor</title>
 </head>
 
 <body>
   <?php include_once('../template/header.php'); ?>
+  <?php include_once('../template/navbar.php'); ?>
 
 
   <form action="insert_distributor.php" method="post">

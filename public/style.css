@@ -3,6 +3,30 @@
   padding: 0;
 }
 
-.form-input {
+h1 {
+  color: #800000;
+}
+
+body {
+  margin: 2rem 1rem;
+}
+
+p {
+  margin: 1rem;
+}
+
+footer {
+  justify-self: center;
+}
+
+.form-input input {
   display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+td {
+  margin : 1rem;
+  padding: 0.5rem;
+  text-align: justify;
 }

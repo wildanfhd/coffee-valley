@@ -19,24 +19,27 @@ if ($result->num_rows > 0) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="../public/style.css">
+  <title>Home</title>
 </head>
 
 <body>
   <?php include_once('../template/header.php'); ?>
+  <?php include_once('../template/navbar.php'); ?>
 
 
-  <div>
-    <p>Bean of The Day</p>
+
+  <div class="container">
+    <p><strong>Bean of The Day</strong></p>
     <p><?php echo $row['name'] ?></p>
-    <p>Sale Price</p>
+    <p><strong>Sale Price</strong></p>
     <p><?php echo $row['price'] ?></p>
-    <p>Description</p>
+    <p><strong>Description</strong></p>
     <p><?php echo $row['description'] ?></p>
   </div>
 
   <footer><?php date_default_timezone_set("Asia/Jakarta");
-          echo date('Y-m-d'); ?></footer>
+          echo date('F j, Y'); ?></footer>
 </body>
 
 </html>

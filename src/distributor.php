@@ -19,11 +19,13 @@ if ($result->num_rows > 0) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/style.css">
   <title>Distributor</title>
 </head>
 
 <body>
   <?php include_once('../template/header.php'); ?>
+  <?php include_once('../template/navbar.php'); ?>
 
   <table>
     <tr>
@@ -35,7 +37,7 @@ if ($result->num_rows > 0) {
       <tr>
         <td><?php echo $data['distributor_name'] ?></td>
         <td><?php echo $data['city'] ?></td>
-        <td><a href="" style="text-decoration: none;">[Edit]</a></td>
+        <td><a href="" style="text-decoration: none;" id="<?= $data['id'] ?>">[Edit]</a></td>
       </tr>
     <?php } ?>
   </table>

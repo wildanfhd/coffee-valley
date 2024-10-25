@@ -2,7 +2,7 @@
 
 define("HOSTNAME", "localhost");
 define("USERNAME", "root");
-define("PASSWORD", "1234");
+define("PASSWORD", "1234"); // Set value ("1234") sesuai dengan password db
 define("DATABASE", "coffee_valley");
 
 // Connect to Database
